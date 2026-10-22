@@ -72,7 +72,6 @@ Le journal fourni contient déjà 120 interventions : l'option 2 fonctionne dès
 
 ```bash
 npm test          # 38 tests, sans réseau ni clé API
-npm run evaluer   # après un premier bilan : accord avec l'échantillon étiqueté à la main (objectif 90 %)
 ```
 
 ---
@@ -83,7 +82,6 @@ npm run evaluer   # après un premier bilan : accord avec l'échantillon étique
 |---|---|
 | `npm start` (ou `node .`) | Lance le menu |
 | `npm test` | Lance tous les tests (`node:test`), sans appel à l'API |
-| `npm run evaluer` | Compare le classement du modèle aux 20 interventions étiquetées de `sources/echantillon_etiquete.csv` |
 | `npm run seed` | Recrée `data/` à partir de `sources/` (refuse si le journal existe déjà) |
 | `npm run seed -- --force` | Réinitialise `data/` : **efface les interventions saisies** et le classement mémorisé |
 
@@ -146,8 +144,7 @@ agent-pannes/
 ├── sources/             données d'origine de l'exercice (ancien format), utilisées par « npm run seed »
 ├── docs/                diagramme BPMN (spécification du flux)
 ├── scripts/
-│   ├── seed.js              import de sources/ vers data/
-│   └── evaluer.js           mesure de l'accord avec l'échantillon étiqueté
+│   └── seed.js              import de sources/ vers data/
 ├── src/
 │   ├── index.js             point d'entrée, boucle du menu, gestion des erreurs
 │   ├── menu.js              sélecteurs et saisies (inquirer)
