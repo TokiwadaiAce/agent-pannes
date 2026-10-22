@@ -1,0 +1,5 @@
+node_modules/
+.env
+out/
+# Généré par « Consulter le bilan » à partir de journal.csv
+data/journal_enrichi.csv

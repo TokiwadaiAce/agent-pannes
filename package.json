@@ -1,0 +1,24 @@
+{
+  "name": "agent-pannes",
+  "version": "1.0.0",
+  "description": "Analyse des pannes de maintenance : le code calcule, le modèle rédige.",
+  "type": "module",
+  "private": true,
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20.17"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "seed": "node scripts/seed.js",
+    "evaluer": "node scripts/evaluer.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "@inquirer/prompts": "^8.7.4",
+    "csv-parse": "^7.0.3",
+    "csv-stringify": "^6.9.0",
+    "dotenv": "^18.0.8"
+  }
+}
